@@ -1,0 +1,15 @@
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+
+# Sistema
+.DS_Store
+*.log
+*.sql
+*.zip
+
+# Docker
+.env
+docker-compose.override.yml
