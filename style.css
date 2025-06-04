@@ -547,7 +547,7 @@ License: GNU General Public License v2 or later
   }
   
   h1:not(:last-child) {
-    margin-top: 24px !important;
+    margin-top: 30px !important;
     margin-bottom: 24px;
   }
   
@@ -7363,29 +7363,85 @@ li.product {
     transition: background-color 0.3s ease;
 }
 
-.continue-shopping:hover {
-    background-color: #aaa;
+  .continue-shopping:hover {
+      background-color: #aaa;
+  }
+
+  .quantity {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0px;
+  }
+
+  .quantity input.qty {
+      width: 100px;
+      text-align: center;
+  }
+
+  .quantity .minus,
+  .quantity .plus {
+      background-color: #54b1e0;
+      color: white;
+      border: none;
+      padding: 0px 0px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 4px;
+  }
+
+  .woocommerce-address {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
 }
 
-.quantity {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0px;
+.woocommerce-address-header {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #34495e;
 }
 
-.quantity input.qty {
-    width: 100px;
-    text-align: center;
+.woocommerce-address-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #11263c;
 }
 
-.quantity .minus,
-.quantity .plus {
-    background-color: #54b1e0;
-    color: white;
-    border: none;
-    padding: 0px 0px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 4px;
+/* 1) Hacer que la columna de billing-address ocupe 100% de ancho */
+.woocommerce-column--billing-address {
+  width: 100% !important;
+  float: none !important;
+}
+
+/* 2) Opcional: Si quieres que ambas (billing + shipping) en desktop sigan lado a lado, pero en mobile sean full-width */
+@media (min-width: 768px) {
+  .woocommerce-column--billing-address,
+  .woocommerce-column--shipping-address {
+    width: calc(50% - 1rem) !important; /* dos columnas, con un pequeño gap */
+    float: left !important;
+    margin-right: 1rem;
+  }
+  /* Elimina el margin-right de la última columna del row para que centren bien */
+  .woocommerce-column--shipping-address {
+    margin-right: 0 !important;
+  }
+}
+
+/* 3) Asegúrate de que el contenedor padre limpie floats */
+.woocommerce-billing-fields__field-wrapper {
+  overflow: hidden; /* evita que los floats rompan el layout */
+}
+
+.woocommerce-column--billing-address, .woocommerce-column--shipping-address {
+  width: calc(50% - 1rem) !important;
+}
+
+
+cart-title{
+  margin-bottom:30px !important;
 }

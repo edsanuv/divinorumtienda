@@ -85,21 +85,21 @@ add_action ( 'admin_init', 'wp_acceso_contenido_privado' );
 
 
 // [priceriviera ]
-function priceriviera_func( $atts ) {
-	$a = shortcode_atts( array(
-		'colums' => 'four',
-		'hours' => '',
-		'price' => '',
-		'id' => ''
-	), $atts );
-	$anchor ="<div class='".$a['colums']." columns'><a class='fancybox fancybox.iframe btnexpand' href='".get_permalink((int)$a['id'])."'>".
-	$a['hours']."<br>".
-	$a['price'].
-	"</a></div>";
+// function priceriviera_func( $atts ) {
+// 	$a = shortcode_atts( array(
+// 		'colums' => 'four',
+// 		'hours' => '',
+// 		'price' => '',
+// 		'id' => ''
+// 	), $atts );
+// 	$anchor ="<div class='".$a['colums']." columns'><a class='fancybox fancybox.iframe btnexpand' href='".get_permalink((int)$a['id'])."'>".
+// 	$a['hours']."<br>".
+// 	$a['price'].
+// 	"</a></div>";
  
-	return $anchor;
-}
-add_shortcode( 'priceriviera', 'priceriviera_func' );
+// 	return $anchor;
+// }
+// add_shortcode( 'priceriviera', 'priceriviera_func' );
 
 function videodiv_func( $atts ) {
 	$a = shortcode_atts( array(
@@ -282,7 +282,7 @@ function getpost($data){
 			$response->title =  get_the_title();
 			$response->content = get_the_content();
 			$response->image = get_the_post_thumbnail(get_the_ID());
-			$response->category =  get_category( get_the_ID() )->name;
+			// $response->category =  get_category( get_the_ID() )->name;
 			$response->author = get_the_author_meta( 'nicename', $the_query->post->post_author );
 			$response->date = get_the_date();
 		}
@@ -310,9 +310,24 @@ function divinorum_woocommerce_scripts() {
 		wp_enqueue_style( 'woocommerce-general' );
         wp_enqueue_script( 'wc-checkout' );
         wp_enqueue_script( 'wc-quantity-increment' );
+		wp_enqueue_script( '' );
     }
 }
 add_action('wp_enqueue_scripts', 'divinorum_woocommerce_scripts');
+
+//agregar js
+
+function agregar_scripts_custom() {
+    wp_enqueue_script(
+        'btnhamburguer',
+        get_template_directory_uri() . '/js/btnhamburguer.js',
+        array('jquery'), // Dependencias, puedes dejar vacío si no usas jQuery
+        null,             // Versión (puedes poner un número o null)
+        true              // true = carga al final del body
+    );
+}
+add_action('wp_enqueue_scripts', 'agregar_scripts_custom');
+
 
 //Carritos
 add_filter( 'woocommerce_add_to_cart_fragments', 'custom_cart_count_fragments' );
@@ -324,6 +339,3 @@ function custom_cart_count_fragments( $fragments ) {
     $fragments['.cart-count'] = ob_get_clean();
     return $fragments;
 }
-
-
-add_filter('the_content', 'do_shortcode', 11);

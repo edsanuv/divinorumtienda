@@ -76,19 +76,19 @@
                         </li>
                         <!-- <li><a href="challenges.html">Servicios</a> -->
                         <li><a href="https://divinorum.com.mx/services/single_page/spa">Servicios</a> 
-                          <div class="sub-menu-wrap">
-                            <!-- <ul>
+                          <!-- <div class="sub-menu-wrap">
+                            <ul>
                               <li><a href="blog_single.html">Spa cannábico</a></li>
                               <li><a href="blog_single.html">Terapia cannábica integral</a></li>
                               <li><a href="blog_single.html">Nebulización con terpenos</a></li>
-                            </ul> -->
-                          </div>
+                            </ul>
+                          </div> -->
                         </li>
 
                         <li><a href="tienda/">Tienda en linea</a>
                           <!--sub menu-->
-                          <div class="sub-menu-wrap">
-<!-- 
+                          <!-- <div class="sub-menu-wrap">
+
                             <ul>
 
                               <li><a href="shop_category.html">Category Page</a></li>
@@ -96,8 +96,8 @@
                               <li><a href="shop_cart.html">Cart</a></li>
                               <li><a href="shop_checkout.html">Checkout</a></li>
                               <li><a href="shop_account.html">My Account</a></li>
-                            </ul> -->
-                          </div>
+                            </ul>
+                          </div> -->
                         </li>
                         <li>
                            <?php if ( function_exists( 'WC' ) ) : ?>
@@ -117,47 +117,7 @@
                     <!-- - - - - - - - - - - - - end Navigation - - - - - - - - - - - - - - - -->
                     <!-- - - - - - - - - - - - - end Navigation - - - - - - - - - - - - - - - -->
                   </div>
-                <!-- search button -->
-                <!-- <div class="search-holder"><button type="button" class="search-button"></button></div> -->
-                <!-- account button -->
-                <!-- <button type="button" class="account popup-btn-login"></button> -->
-                <!-- shop button -->
-                <!-- <div class="shop-cart">
-                  <button class="sc-cart-btn dropdown-invoker"><span class="licon-cart"></span></button>
-                  <div class="shopping-cart dropdown-window">
-                    <div class="products-holder">
-                      <div class="product">
-                        <button class="item-close"></button>
-                        <a href="#" class="product-image">
-                          <img src="images/78x78_img1.jpg" alt="">
-                        </a>
-                        <div class="product-description">
-                          <h6 class="product-title"><a href="#">Non Slip Yoga Mat</a></h6>
-                          <span class="product-price">1x$19.95</span>
-                        </div>
-                      </div>
-                      <div class="product">
-                        <button class="item-close"></button>
-                        <a href="#" class="product-image">
-                        
-                          <img src="images/78x78_img2.jpg" alt="">
-                        </a>
-                        <div class="product-description">
-                          <h6 class="product-title"><a href="#">Light Hard Foam Yoga Blocks</a></h6>
-                          <span class="product-price">1x$11.35</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sc-footer">
-                      <div class="subtotal">Subtotal: <span class="total-price">$35.68</span></div>
-                      <div class="vr-btns-set">
-                        <a href="#" class="btn btn-small">View Cart</a>
-                        <a href="#" class="btn btn-small btn-style-3">Checkout</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="btn btn-big btn-style-3">Book Now</a> -->
+              
               </div>
 					</div>
 				</div>

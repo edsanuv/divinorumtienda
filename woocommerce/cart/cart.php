@@ -5,7 +5,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 <section class="woocommerce-cart-section">
     <div class="container">
-        <h1 class="cart-title"><?php esc_html_e( 'Tu carrito', 'woocommerce' ); ?></h1>
+        <h1 class="cart_totals calculated_shipping"><?php esc_html_e( 'Tu carrito', 'woocommerce' ); ?></h1>
 
         <?php wc_print_notices(); ?>
 
