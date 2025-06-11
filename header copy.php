@@ -22,8 +22,8 @@
 	 <style>
         /* Estilos personalizados */
         .navbar {
-            background-color:#ffffff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             padding: 15px 0;
         }
         
@@ -148,56 +148,57 @@
 			<!-- - - - - - - - - - - - - Mobile Menu - - - - - - - - - - - - - - -->
 			<nav id="mobile-advanced" class="mobile-advanced"></nav>
 			<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
-			 <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-                <!-- Logo -->
-                <a class="logo-wrap" href="index.php">
-                    <img src="<?php bloginfo('stylesheet_directory');?>/images/logo.png" alt="Divinorum">
+			<header id="header" class="header sticky-header sticky">
+				<!-- searchform -->
+				<!-- <div class="searchform-wrap">
+					<div class="vc-child h-inherit">
+						<form class="search-form">
+							<button type="submit" class="search-button"></button>
+							<div class="wrapper">
+								<input type="text" name="search" placeholder="Start typing...">
+							</div>
+						</form>
+						<button class="close-search-form"></button>
+					</div>
+				</div> -->
+				<!-- top-header -->
+				<div class="top-header">
+					<div class="flex-row align-items-center justify-content-between">
+						<!-- logo -->
+						<div class="logo-wrap">
+							<a href="index.php" class="logo"><img src="<?php bloginfo('stylesheet_directory');?>/images/logo.png" alt=""></a>
+						</div>
+						<!-- - - - - - - - - - - - / Mobile Menu - - - - - - - - - - - - - -->
+<!-- Botón Hamburguesa para móviles -->
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+        <span class="hamburger">
+		</span>
+      </button>
+
+					<div id="menu-wrap" class="menu-wrap">
+        <nav id="main-navigation" class="main-navigation">
+          <ul id="menu" class="clearfix">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="http://divinorum.com.mx/about_us">¿Quiénes somos?</a></li>
+            <li><a href="http://divinorum.com.mx/about_us">Nosotros</a></li>
+            <li><a href="http://divinorum.com.mx/courses">Cursos y talleres</a></li>
+            <li><a href="https://divinorum.com.mx/services/single_page/spa">Servicios</a></li>
+            <li><a href="/tienda/">Tienda en línea</a></li>
+            <li>
+              <?php if ( function_exists( 'WC' ) ) : ?>
+              <div class="cart-header">
+                <a href="<?php echo wc_get_cart_url(); ?>" class="cart-link">
+                  🛒 CARRITO (<span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>)
                 </a>
-                
-                <!-- Botón Hamburguesa para móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
-                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Contenido del menú -->
-                <div class="collapse navbar-collapse navback" id="navbarContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://divinorum.com.mx/about_us">¿Quiénes somos?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://divinorum.com.mx/about_us">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://divinorum.com.mx/courses">Cursos y talleres</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://divinorum.com.mx/services/single_page/spa">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/tienda/">Tienda en línea</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="cart-header position-relative">
-                                <a href="<?php echo wc_get_cart_url(); ?>" class="cart-link nav-link">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="cart-count ms-1"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-                                </a>
-                                <div class="mini-cart">
-                                    <?php woocommerce_mini_cart(); ?>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <div class="mini-cart"><?php woocommerce_mini_cart(); ?></div>
+              </div>
+              <?php endif; ?>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </div>
+</div>
+				</div>
+			</header>
 			<!-- - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - -->
 

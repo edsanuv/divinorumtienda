@@ -339,3 +339,4 @@ function custom_cart_count_fragments( $fragments ) {
     $fragments['.cart-count'] = ob_get_clean();
     return $fragments;
 }
+
