@@ -27,9 +27,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                             <th class="product-thumbnail"><?php esc_html_e( 'Producto', 'woocommerce' ); ?></th>
                             <th class="product-name">&nbsp;</th>
                             <th class="product-price"><?php esc_html_e( 'Precio', 'woocommerce' ); ?></th>
-                            <th class="product-quantity">
-  <?php echo function_exists('esc_html_e') ? esc_html_e( 'Cantidad', 'woocommerce' ) : 'Cantidad'; ?>
-</th>
+                             <th class="product-quantity"><?php esc_html_e( 'Cantidad', 'woocommerce' ); ?></th>
                             <th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
                         </tr>
                     </thead>

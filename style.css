@@ -150,7 +150,7 @@ License: GNU General Public License v2 or later
   
   button {
     cursor: pointer;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   button::-moz-focus-inner {
@@ -179,7 +179,7 @@ License: GNU General Public License v2 or later
   ------------------------------------- */
   
   body {
-    font: 16px/26px "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #777;
     position: relative;
     padding: 80px;
@@ -509,8 +509,8 @@ License: GNU General Public License v2 or later
   h4,
   h5,
   h6 {
-    font-family: "Prata", serif;
-    color: #333;
+     font-family: 'Poppins', sans-serif;
+    color: #000000;
     font-weight: normal;
     letter-spacing: -0.1px;
   }
@@ -592,7 +592,7 @@ License: GNU General Public License v2 or later
   }
   
   .fw-medium {
-    font-weight: 500;
+    font-weight: 400;
   }
   
   a {
@@ -1059,12 +1059,20 @@ License: GNU General Public License v2 or later
   }
   
   .pre-header .social-icons.style-2 > li > a {
-    color: #999;
+    color: #333;
+    white-space: nowrap;
+    text-transform: uppercase;
     font-size: 14px;
   }
   
   .pre-header .social-icons.style-2 > li > a:hover {
     color: #333;
+    white-space: nowrap;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid transparent;
   }
   
   /* Header-5 */
@@ -1145,16 +1153,6 @@ License: GNU General Public License v2 or later
     font-size: 1rem;
   }
   
-  .main-navigation > ul > li > a {
-    color: #333;
-    white-space: nowrap;
-    text-transform: uppercase;
-    display: block;
-    position: relative;
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid transparent;
-  }
-  
   .searchform-wrap.opened,
   .main-navigation > li:hover > .sub-menu-wrap {
     opacity: 1;
@@ -1173,7 +1171,7 @@ License: GNU General Public License v2 or later
   }
   
   .main-navigation > ul > li.dropdown > a:after {
-    font-family: "fontello";
+    font-family: 'Poppins', sans-serif;
     content: "\e8e7";
     margin-left: 10px;
     font-size: 1rem;
@@ -1243,7 +1241,7 @@ License: GNU General Public License v2 or later
   }
   
   .sub-menu-wrap ul > li.sub:after {
-    font-family: "linearicons";
+    font-family: 'Poppins', sans-serif;
     content: "\e93c";
     position: absolute;
     right: 30px;
@@ -1323,7 +1321,7 @@ License: GNU General Public License v2 or later
   }
   
   .responsive-nav-button:before {
-    font-family: "linearicons";
+    font-family: 'Poppins', sans-serif;
     content: "\e92b";
   }
   .bg-left-col {
@@ -1367,7 +1365,7 @@ License: GNU General Public License v2 or later
     font-size: 20px;
     background-color: transparent;
     color: #333;
-    font-family: "linearicons";
+     font-family: 'Poppins', sans-serif;
   }
   
   .nav-bttn:before {
@@ -1516,7 +1514,7 @@ License: GNU General Public License v2 or later
   }
   
   .navbar-menu .nav-menu > ul > li.sub-menu > a:after {
-    font-family: "Linearicons";
+     font-family: 'Poppins', sans-serif;
     content: "\e93a";
     display: inline-block;
     margin-left: 20px;
@@ -1634,7 +1632,7 @@ License: GNU General Public License v2 or later
   }
   
   .icons-box.style-1.type-2 .icons-box-title {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   .icons-box.style-1.type-2 .icons-box-title a {
@@ -1878,7 +1876,7 @@ License: GNU General Public License v2 or later
   button.search-button,
   .shop-cart .sc-cart-btn,
   button.account {
-    font-family: "Linearicons";
+     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 26px;
     background: none;
@@ -1901,7 +1899,7 @@ License: GNU General Public License v2 or later
   .close-popup {
     background-color: transparent;
     position: absolute;
-    font-family: "linearicons";
+     font-family: 'Poppins', sans-serif;
     left: 100%;
     margin-left: 20px;
     font-size: 20px;
@@ -2261,7 +2259,7 @@ License: GNU General Public License v2 or later
   }
   
   .link-attachment .link:before {
-    font-family: "Linearicons";
+     font-family: 'Poppins', sans-serif;
     content: "\e917";
     display: block;
     font-size: 40px;
@@ -2317,7 +2315,7 @@ License: GNU General Public License v2 or later
   }
   
   .single-post h6.event-title {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     letter-spacing: 0;
   }
@@ -2458,7 +2456,7 @@ License: GNU General Public License v2 or later
   .info-links.comment-type > li > a:last-child {
     color: #333;
     font-size: 18px;
-    font-family: "Prata", serif;
+     font-family: 'Poppins', sans-serif;
     font-weight: normal;
   }
   
@@ -2695,7 +2693,7 @@ License: GNU General Public License v2 or later
   
   .owl-prev::before,
   .owl-next::before {
-    font-family: "Linearicons";
+     font-family: 'Poppins', sans-serif;
   }
   
   .owl-prev::before {
@@ -2850,7 +2848,7 @@ License: GNU General Public License v2 or later
   }
   
   .testimonial .title {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
   }
   
@@ -2880,7 +2878,7 @@ License: GNU General Public License v2 or later
   
   .testimonial-holder.style-2 .testimonial blockquote:before {
     content: "\e7e5";
-    font-family: "linearicons";
+     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 60px;
     line-height: 60px;
@@ -3000,7 +2998,7 @@ License: GNU General Public License v2 or later
   }
   
   .team-item .member-position {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #999;
     font-size: 14px;
     font-weight: 300;
@@ -3247,7 +3245,7 @@ License: GNU General Public License v2 or later
   }
   
   .product-price {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.3px;
     color: #e883ae;
     font-weight: 500;
@@ -3334,7 +3332,7 @@ License: GNU General Public License v2 or later
     display: inline-block;
     vertical-align: top;
     margin-right: 10px;
-    font-family: "linearicons";
+     font-family: 'Poppins', sans-serif;
     color: #e883ae;
     font-size: 20px;
   }
@@ -4146,7 +4144,7 @@ License: GNU General Public License v2 or later
   
   input:not([type="submit"]),
   textarea {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     color: #777;
     border-radius: 7px;
@@ -4235,7 +4233,7 @@ License: GNU General Public License v2 or later
   input[type="checkbox"] + label {
     font-size: inherit;
     font-weight: 300;
-    font-family: inherit;
+     font-family: 'Poppins', sans-serif;
     text-transform: none;
     width: initial;
     padding-top: 7px;
@@ -4407,7 +4405,7 @@ License: GNU General Public License v2 or later
   
   .mad-custom-select .mad-selected-option:before {
     content: "\e93a";
-    font-family: "linearicons";
+     font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 0;
     right: 20px;
@@ -4525,7 +4523,7 @@ License: GNU General Public License v2 or later
   
   .range-values span,
   .range-values input[type="text"] {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #777;
   }
   
@@ -4771,6 +4769,18 @@ License: GNU General Public License v2 or later
     color:#563d7c;
     background: #ffe484;
   }
+
+    .nav-link {
+    text-transform: uppercase;
+}
+  
+
+  .nav-link:hover, .nav-link.active {
+    color: #333;
+    white-space: nowrap;
+    text-transform: uppercase;
+    background-color: #e9e9e92c;
+}
   
   .btn{
     /*background-color: transparent;*/
@@ -4824,7 +4834,7 @@ License: GNU General Public License v2 or later
       top: 0;
       left: 0;
       width: 100%;
-      font-family: 'Heebo', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
   
     .shopping-cart{
@@ -4919,7 +4929,7 @@ License: GNU General Public License v2 or later
       right: 0;
       top: 0;
       margin-top: 2px;
-      font-family: 'Linearicons';
+       font-family: 'Poppins', sans-serif;
       background: none;
       font-size: 18px;
       z-index: 2;
@@ -5126,7 +5136,7 @@ License: GNU General Public License v2 or later
   
     .product-characteristics .selected-option{
       min-width: 200px;
-      font-family: 'Raleway', sans-serif;
+       font-family: 'Poppins', sans-serif;
       font-size: 16px;
       font-weight: 500;
     }
@@ -5136,7 +5146,7 @@ License: GNU General Public License v2 or later
     }
   
     .product.single .product-characteristics .name{
-      font-family: 'Raleway', sans-serif;
+       font-family: 'Poppins', sans-serif;
       font-size: 14px;
       font-weight: 500;
       line-height: 22px;
@@ -5278,7 +5288,7 @@ License: GNU General Public License v2 or later
     .checkbox-title input[type="checkbox"] + label{
       font-size: 24px;
       line-height: 30px;
-      font-family: 'Prata', sans-serif;
+       font-family: 'Poppins', sans-serif;
       color: #333;
     }
   
@@ -5507,7 +5517,7 @@ License: GNU General Public License v2 or later
   
     .prev-page::before,
     .next-page::before{
-      font-family: 'linearicons';
+       font-family: 'Poppins', sans-serif;
       font-size: 26px;
     }
   
@@ -5549,7 +5559,25 @@ License: GNU General Public License v2 or later
     .page-nav .btn-wrap > *{
       margin: 0 2.5px 5px;
     }
+
+    .navbar-collapse.show {
+            margin-top: 88px;
+    }
   
+    .mini-cart .mini_cart_item{
+      font-size: 80%;
+    }
+
+    .woocommerce-Price-amount .amount{
+      font-size: 50%;
+    }
+    .woocommerce-mini-cart__buttons .buttons{
+      margin-left: 5px;
+    }
+.cart-header a {
+   font-size: 0.7rem; /* Ejemplo con rem */
+   /* margin-right: .1rem; */
+}
 /*==================================RESPONSIVE LAYOUTS===============================================*/
 
 @media only screen and (min-width: 1680px){
@@ -5573,6 +5601,10 @@ License: GNU General Public License v2 or later
 	.container.wide3{
 		max-width: 1280px;
 	}
+
+  .container{
+    max-width: 1900px;
+  }
 
 }
 
@@ -5717,6 +5749,10 @@ License: GNU General Public License v2 or later
   .main-navigation > ul > li > a {
     font-size: 1rem;
   }
+
+    .navbar-light .navbar-nav .nav-link {
+    font-size: .6rem !important; /* Ajusta el tamaño del texto */
+}
 }
 
 	.tribe-events-calendar tr td:nth-child(6) .tribe-events-category-tech-events .tribe-events-tooltip, 
@@ -5795,6 +5831,11 @@ License: GNU General Public License v2 or later
     .col-bg{
     	background-attachment: scroll!important;
     }
+
+    body {
+    padding: 0px;
+    margin-top: 150px;
+}
 
 }
 
@@ -5909,7 +5950,7 @@ License: GNU General Public License v2 or later
 				    position: relative;
 				    margin-right: 5px;
 				    font-size: 14px;
-				    font-family: 'fontello';
+				     font-family: 'Poppins', sans-serif;
 				    content: "\f105";
 				}
 
@@ -5946,7 +5987,7 @@ License: GNU General Public License v2 or later
 		    vertical-align: middle;
 		    text-align: center;
 		    font-size: 30px;
-		    font-family: 'linearicons';
+		     font-family: 'Poppins', sans-serif;
 		    line-height: 38px;
 		}
 
@@ -6129,7 +6170,7 @@ License: GNU General Public License v2 or later
 	.responsive-table td:before{
 		content:attr(data-title);
 		text-transform: uppercase;
-		color: #333;
+		color: #000000;
 		position:absolute;
 		top:50%;
 		left:15px;
@@ -7003,7 +7044,7 @@ li.product:hover {
 .woocommerce-loop-product__link {
   display: block;
   text-decoration: none;
-  color: #333;
+  color: #000000;
   flex-grow: 1;
   padding: 15px;
 }
@@ -7304,6 +7345,7 @@ li.product {
   .sub-menu {
     padding-left: 20px;
   }
+
 }
 
 /*Estilos del carrito*/
@@ -7515,6 +7557,7 @@ cart-title{
             .cart-header {
                 margin-top: 20px;
             }
+        
         }
         
         /* Ajustes para el carrito en móviles */
@@ -7599,6 +7642,11 @@ cart-title{
   .navbar-collapse.show {
         width: 66%;
   }
+
+  body {
+    padding: 30px;
+}
+
 }
 
 @media only screen and (max-width:320px){
@@ -7606,5 +7654,10 @@ cart-title{
   .navbar-collapse.show {
         width: 60%;
   }
+
+  body {
+    padding: 46px;
+    margin-top: 100px;
 }
 
+}
