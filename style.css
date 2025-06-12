@@ -184,6 +184,13 @@ License: GNU General Public License v2 or later
     position: relative;
     padding: 80px;
     margin-top: 100px;
+    
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    font-weight: 400;
+    color: #000000 !important;
+    font-style: normal;
   }
   
   .loader {
@@ -509,7 +516,7 @@ License: GNU General Public License v2 or later
   h4,
   h5,
   h6 {
-     font-family: 'Poppins', sans-serif;
+     font-family: 'prata', sans-serif;
     color: #000000;
     font-weight: normal;
     letter-spacing: -0.1px;
@@ -551,6 +558,8 @@ License: GNU General Public License v2 or later
   h1:not(:last-child) {
     margin-top: 30px !important;
     margin-bottom: 24px;
+    text-align: center;
+    font-size: 60px;
   }
   
   h2:not(:last-child) {
@@ -1241,7 +1250,7 @@ License: GNU General Public License v2 or later
   }
   
   .sub-menu-wrap ul > li.sub:after {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Prata', sans-serif;
     content: "\e93c";
     position: absolute;
     right: 30px;
@@ -1365,7 +1374,7 @@ License: GNU General Public License v2 or later
     font-size: 20px;
     background-color: transparent;
     color: #333;
-     font-family: 'Poppins', sans-serif;
+     font-family: 'Prata', sans-serif;
   }
   
   .nav-bttn:before {
@@ -1514,7 +1523,7 @@ License: GNU General Public License v2 or later
   }
   
   .navbar-menu .nav-menu > ul > li.sub-menu > a:after {
-     font-family: 'Poppins', sans-serif;
+     font-family: 'Prata', sans-serif;
     content: "\e93a";
     display: inline-block;
     margin-left: 20px;
@@ -2259,7 +2268,7 @@ License: GNU General Public License v2 or later
   }
   
   .link-attachment .link:before {
-     font-family: 'Poppins', sans-serif;
+     font-family: 'Prata', sans-serif;
     content: "\e917";
     display: block;
     font-size: 40px;
@@ -2456,7 +2465,7 @@ License: GNU General Public License v2 or later
   .info-links.comment-type > li > a:last-child {
     color: #333;
     font-size: 18px;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Prata', sans-serif;
     font-weight: normal;
   }
   
@@ -4761,7 +4770,7 @@ License: GNU General Public License v2 or later
     color: #fff;
   }
   .text-white.sidebar.collapse .nav-link.active{
-    font-weight: bold;
+    font-weight:normal;
     color:#ffe484
   }
   
@@ -4776,7 +4785,7 @@ License: GNU General Public License v2 or later
   
 
   .nav-link:hover, .nav-link.active {
-    color: #333;
+    color: #000000;
     white-space: nowrap;
     text-transform: uppercase;
     background-color: #e9e9e92c;
@@ -5752,7 +5761,6 @@ License: GNU General Public License v2 or later
 
     .navbar-light .navbar-nav .nav-link {
     font-size: .6rem !important; /* Ajusta el tamaño del texto */
-}
 }
 
 	.tribe-events-calendar tr td:nth-child(6) .tribe-events-category-tech-events .tribe-events-tooltip, 
@@ -7130,7 +7138,7 @@ li.product:hover {
 
 /* Ajustes específicos para el texto del menú */
 .main-navigation > ul > li > a {
-  color: #333;
+  color: #000000;
   white-space: nowrap;
   text-transform: uppercase;
   display: flex;
@@ -7202,13 +7210,12 @@ li.product:hover {
   display: flex;
   gap: 5px;
   padding: 0px 0px;
-  background: #f5f5f5;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
 .cart-header a:hover {
-  background: #e9e9e9;
+  background: #e9e9e983;
 }
 
 @media only screen and (max-width:375px){
@@ -7351,7 +7358,7 @@ li.product {
 /*Estilos del carrito*/
 .woocommerce-cart-section {
     padding: 40px 0;
-    background: #f5f5f5;
+    background: #faf9f936;
 }
 
 .cart-title {
@@ -7660,4 +7667,8 @@ cart-title{
     margin-top: 100px;
 }
 
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit.alt:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.alt:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button.alt:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce #respond input#submit.alt:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce a.button.alt:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button.alt:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce input.button.alt:hover {
+    background-color: #e883ae !important;
 }
